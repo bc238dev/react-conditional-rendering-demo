@@ -1,0 +1,17 @@
+.panel1 {
+  user-select: none;
+  margin: 10px;
+  padding: 10px;
+  box-shadow: 0 0 3px #555;
+  background-color: lightyellow;
+}
+
+.panel2 {
+  @extend .panel1;
+  background-color: lightblue;
+}
+
+.panel3 {
+  @extend .panel1;
+  background-color: lightcoral;
+}
