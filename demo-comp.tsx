@@ -52,21 +52,6 @@ export default class DemoComponent extends Component<IProps, IState> {
     let name = visiblePanelName || panelName || "panel1"
     let selectedPanel = this.panelMap[name] || this.panel1
 
-    // switch (name) {
-    //   case "panel1":
-    //     selectedPanel = this.panel1
-    //     break
-
-    //   case "panel2":
-    //     selectedPanel = this.panel2
-    //     break
-
-    //   case "panel3":
-    //     selectedPanel = this.panel3
-    //     break
-    // }
-
-    // return
     return selectedPanel
   }
 }
