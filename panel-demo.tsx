@@ -80,14 +80,14 @@ export enum StatusKey {
   ERROR = "error",
 }
 
-export interface IInfoProps {
+export interface IInfoPanelProps {
   statusKey: StatusKey
   info: string
 }
 
-export class InfoPanel extends Component<IInfoProps, {}> {
+export class InfoPanel extends Component<IInfoPanelProps, {}> {
   selectPanel = (statusKey: StatusKey, info: string) => {
-    const defaultPanel = <Panel1 txt="Unknown" /> // Panel1 is our default panel!
+    const defaultPanel = <Panel3 txt="Unknown" /> // Panel3 is default panel!
     const map: { [key: string]: any } = {
       success: <Panel1 txt={info} />,
       warning: <Panel2 txt={info} />,
